@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.board {
+    height: 450px;
+    width: 450px;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 50px;
+    padding-right: 35px;
+}
+
+.square {
+    border: 5px solid rgb(226, 226, 226);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 100px;
+}
+
+.square#s0,
+.square#s1,
+.square#s2{
+    border-top: none;
+}
+
+.square#s0,
+.square#s3,
+.square#s6{
+    border-left: none;
+}
+
+.square#s2,
+.square#s5,
+.square#s8{
+    border-right: none;
+}
+
+.square#s6,
+.square#s7,
+.square#s8{
+    border-bottom: none;
+}
+
+.ticTacToe {
+    font-size: 90px;
+}
